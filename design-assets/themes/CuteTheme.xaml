@@ -1,0 +1,74 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- 
+    ClawStatus Cute Theme - 卡通圆润风
+    风格：浅蓝/青色圆润风格，可爱友好
+    参考：机械龙虾设计图 5.png
+    -->
+    
+    <!-- 主色调定义 -->
+    <Color x:Key="PrimaryColor">#5DBCD2</Color>
+    <Color x:Key="SecondaryColor">#7FD5E8</Color>
+    <Color x:Key="AccentColor">#FFB7C5</Color>
+    
+    <!-- 发光效果颜色 -->
+    <Color x:Key="GlowColor">#5DBCD2</Color>
+    <Color x:Key="GlowIdleColor">#5DBCD2</Color>
+    <Color x:Key="GlowBusyColor">#FFB347</Color>
+    <Color x:Key="GlowFireColor">#FF6B6B</Color>
+    <Color x:Key="GlowErrorColor">#FF6B6B</Color>
+    <Color x:Key="GlowOfflineColor">#B0B0B0</Color>
+    
+    <!-- 字体颜色 -->
+    <Color x:Key="TextColor">#2C3E50</Color>
+    <Color x:Key="TextSecondaryColor">#5A6C7D</Color>
+    
+    <!-- 背景颜色 -->
+    <Color x:Key="BackgroundColor">#E8F4F8</Color>
+    <Color x:Key="WindowBackgroundColor">#00000000</Color>
+    
+    <!-- 柔和渐变 -->
+    <LinearGradientBrush x:Key="MetalGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#5DBCD2" Offset="0.0"/>
+        <GradientStop Color="#7FD5E8" Offset="0.5"/>
+        <GradientStop Color="#5DBCD2" Offset="1.0"/>
+    </LinearGradientBrush>
+    
+    <!-- 发光效果画笔 -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource SecondaryColor}"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
+    <SolidColorBrush x:Key="GlowBrush" Color="{StaticResource GlowColor}"/>
+    <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}"/>
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="{StaticResource TextSecondaryColor}"/>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}"/>
+    
+    <!-- 状态颜色 -->
+    <SolidColorBrush x:Key="IdleBrush" Color="{StaticResource GlowIdleColor}"/>
+    <SolidColorBrush x:Key="BusyBrush" Color="{StaticResource GlowBusyColor}"/>
+    <SolidColorBrush x:Key="FireBrush" Color="{StaticResource GlowFireColor}"/>
+    <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource GlowErrorColor}"/>
+    <SolidColorBrush x:Key="OfflineBrush" Color="{StaticResource GlowOfflineColor}"/>
+    
+    <!-- 柔和发光效果 -->
+    <DropShadowEffect x:Key="GlowEffect" 
+                      BlurRadius="20" 
+                      ShadowDepth="0" 
+                      Color="{StaticResource GlowColor}"
+                      Opacity="0.6"/>
+    
+    <!-- 字体定义 -->
+    <FontFamily x:Key="PrimaryFont">Comic Sans MS</FontFamily>
+    <FontFamily x:Key="MonoFont">Consolas</FontFamily>
+    
+    <!-- 字号（稍大） -->
+    <sys:Double x:Key="FontSizeSmall">11</sys:Double>
+    <sys:Double x:Key="FontSizeNormal">13</sys:Double>
+    <sys:Double x:Key="FontSizeLarge">18</sys:Double>
+    
+    <!-- 动画时长（稍慢） -->
+    <Duration x:Key="AnimationDuration">00:00:00.400</Duration>
+    <Duration x:Key="BlinkDuration">00:00:00.150</Duration>
+</ResourceDictionary>
