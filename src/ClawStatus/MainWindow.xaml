@@ -1,0 +1,41 @@
+<Window x:Class="ClawStatus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClawStatus" 
+        Height="64" Width="64"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        Loaded="Window_Loaded">
+    
+    <Grid>
+        <!-- 状态指示器容器 -->
+        <Border x:Name="StatusIndicator" 
+                Width="64" Height="64" 
+                CornerRadius="32"
+                Background="#1E3A5F">
+            <!-- 吉祥物/状态显示区域 -->
+            <Grid>
+                <!-- 胸部发光区域（状态指示器） -->
+                <Ellipse x:Name="ChestLight" 
+                         Width="20" Height="20" 
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Center"
+                         Fill="#00BFFF">
+                    <Ellipse.Effect>
+                        <DropShadowEffect Color="#00BFFF" BlurRadius="10" ShadowDepth="0"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+                
+                <!-- 眼睛（简化版） -->
+                <Canvas Width="64" Height="64">
+                    <Ellipse x:Name="LeftEye" Width="6" Height="6" Canvas.Left="18" Canvas.Top="20" Fill="#FF0000"/>
+                    <Ellipse x:Name="RightEye" Width="6" Height="6" Canvas.Left="40" Canvas.Top="20" Fill="#FF0000"/>
+                </Canvas>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

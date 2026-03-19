@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ClawStatus</AssemblyName>
+    <RootNamespace>ClawStatus</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>HiClaw Team</Authors>
+    <Description>OpenClaw Desktop Status Widget - A lightweight WPF application for monitoring OpenClaw agent status</Description>
+  </PropertyGroup>
+
+</Project>
